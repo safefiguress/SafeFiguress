@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safe Figuress Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+  <img src="Screenshot_2025-06-24_095354-removebg-preview.png" alt="Safe Figuress" style="height: 48px;">
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto navbar-items-wide">
+          <li class="nav-item"><a class="nav-link active" href="about.html" style="color: black;">About Us</a></li>
+
+          <li class="nav-item"><a class="nav-link active" href="why.html" style="color: black;">Why Choose Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="service.html" style="color: black;">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html" style="color: black;">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="test.html" style="color: black;">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link active" href="faq.html" style="color: black;">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- About Section -->
+  <section id="about-safe-figuress" class="about-section py-1">
+    <div class="about-heading-container d-flex align-items-center my-1 mx-auto">
+      <hr class="flex-grow-1 me-3 about-heading-line">
+      <h2 class="about-heading-title mb-0 text-nowrap">Frequently Asked Questions</h2>
+      <hr class="flex-grow-1 ms-3 about-heading-line">
+    </div>
+
+  </section>
+
+  <div id="ppopup-backdrop"></div>
+  <div id="ppopup-modal">
+    <button id="ppopup-close" aria-label="Close">&times;</button>
+    <section id="ppopup-pricing-plan-section" class="ppopup-py-5 ppopup-pricing-gradient-bg"
+      style="padding: 2.2rem 1.5rem;">
+      <div class="ppopup-container" style="max-width: 100%;">
+        <div class="ppopup-pricing-plan-box ppopup-pricing-animate ppopup-shadow-lg">
+          <div class="ppopup-row ppopup-justify-content-center">
+            <div class="ppopup-col-lg-12">
+              <div class="ppopup-text-center ppopup-mb-4">
+                <div class="ppopup-pricing-icon-burst ppopup-mb-2">
+                  <span class="ppopup-display-3" style="font-size:2.5rem;">💼</span>
+                </div>
+                <h2 id="ppopup-pricing-plan-section-with-js" class="ppopup-pricing-title ppopup-mb-3">
+                  <span>Transparent Pricing, Tailored for You</span>
+                </h2>
+                <div class="ppopup-pricing-highlight ppopup-mb-3">
+                  <span class="ppopup-fw-bold" style="font-size:2rem;">$500<span class="ppopup-fs-6"
+                      style="font-size:1rem;">/month</span></span>
+                </div>
+                <div class="ppopup-pricing-subtitle">
+                  <span>Plans start at just <b>$500/month</b> — and adjust based on your transaction volume, reporting
+                    complexity, and service scope. Whether you're a manufacturer, retailer or importer, we deliver
+                    clean, reliable books without the overhead of a full-time team.</span>
+                </div>
+              </div>
+              <div class="ppopup-row ppopup-justify-content-center">
+                <div class="ppopup-col-md-12">
+                  <div class="ppopup-card ppopup-border-0 ppopup-shadow ppopup-pricing-plan-card ppopup-glassy-card">
+                    <div class="ppopup-card-body">
+                      <h5 class="ppopup-fw-bold ppopup-mb-3 ppopup-text-primary ppopup-pricing-included">What’s
+                        included:</h5>
+                      <ul class="ppopup-pricing-list ppopup-list-unstyled ppopup-mb-3 ppopup-ms-2">
+                        <li>✅ Monthly bookkeeping & financial statements</li>
+                        <li>✅ QuickBooks (Online, Desktop, Enterprise), Xero, Tally, Busy & Excel</li>
+                        <li>✅ CPA-ready reports & reconciliations</li>
+                        <li>✅ Custom support for cost tracking, budgeting & migration</li>
+                        <li>✅ Scalable as your business grows</li>
+                      </ul>
+                      <div
+                        class="ppopup-alert ppopup-alert-info ppopup-text-center ppopup-mt-3 ppopup-mb-0 ppopup-rounded-pill ppopup-border-0 ppopup-shadow-sm ppopup-pricing-discuss"
+                        style="background:#e4f1fb;">
+                        💬 Let’s discuss a plan that works for your operations and budget.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ppopup-text-center ppopup-mt-4">
+                <a href="#contactForm"
+                  class="ppopup-btn-gradient ppopup-btn-lg ppopup-rounded-pill ppopup-px-5 ppopup-pricing-cta ppopup-glow-on-hover"
+                  style="font-size:1.1rem;">Let’s Discuss</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Bootstrap FAQ Section with Professional Animation -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="faq-animated card shadow-lg border-0 p-4">
+      
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                  aria-expanded="true" aria-controls="collapse1">
+                  What industries do you specialize in?
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Manufacturing, retail, and import/export businesses.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  What is the current turnover you handle?
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We are currently managing a combined turnover of $100M across our clients.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  How quickly can you onboard a new client?
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Typically, we complete setup and onboarding within 2–4 business days, with your first financial report
+                  delivered within 7–10 days after data access.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  What bookkeeping software do you support?
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We work with QuickBooks, Xero, Tally, Busy, and Excel. We also assist with data migration from ERP and
+                  other legacy systems.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  Are your financial reports CPA-ready?
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Absolutely. Our reports meet CPA standards and are audit-ready, ensuring compliance and transparency
+                  for tax and regulatory needs.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  How is your pricing structured?
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We offer flexible, customized pricing based on transaction volume and reporting complexity, starting
+                  as low as $250/month for bookkeeping services.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  Do you offer support beyond bookkeeping?
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes! We provide budgeting, forecasting, cash flow planning, tax return support, and financial advisory
+                  services tailored to your business.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                  How can I contact Safe Figuress?
+                </button>
+              </h2>
+              <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="faq8"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can reach us via email at <a href="mailto:s.gulati@safefiguress.com">s.gulati@safefiguress.com</a>
+                  or phone/WhatsApp at <a href="tel:+917015731053">+91 7015731053</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Modern & Professional Contact Form (Bootstrap 5) -->
+  
+
+  <footer class="custom-footer">
+    <div class="footer-content">
+      <div class="brand">Safe Figuress</div>
+      <div class="footer-links">
+        <a href="mailto:contact@safefiguress.com" class="footer-icon" title="Gmail" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/safe-figuress" class="footer-icon" title="LinkedIn" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="tel:+91 9800004289" class="footer-icon" title="Phone">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://www.instagram.com/safefiguress " class="footer-icon" title="Instagram" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="footer-copy">
+        © 2025 Safe Figuress. All rights reserved.
+      </div>
+    </div>
+    <button class="back-to-top" id="backToTop" title="Go to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
